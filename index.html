@@ -8,75 +8,67 @@
     <title>You-Tvideo</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container container"></div>
-<a class="header__link">
-    <svg class="header__logo" viewBox="0 0 240 32" role="img" 
-        aria-label="Логотип сервиса You-Tvideo">
-        <use xlink:href="/img/sprite.svg#logo-orange"></use>
-    </svg>
-</a>
-<a class="header__link header__link_favorite" href="/favorite.html">Избранное</a>
+<wraper class="wraper">
+<header class="header">
+    <div class="header__container container">
+        <div class="header__favorite">
+            <a class="header__link" href="/favorite.html">Избранное</a>
+            <img src="img/star-white.svg" alt="Избранное" aria-label="Избранное" role="img" class="header__favorite-img">
+        </div>
+        <img src="img/logo-white.svg" alt="Логотип сервиса You-Tvideo" aria-label="Логотип сервиса You-Tvideo" role="img" class="header__logo">
+        <h1 class="header__title">Смотри. Загружай. Создавай</h1>
+        <div class="header__text">Удобный видеохостинг для тебя</div>
     </div>
-    </header>
-<div class="main">
+</header>
 
-<section class="hero">
-    <div class="hero__container container">
-        <a class="hero__link" href="/favorite.html">Избранное</a>
-    <svg class="header__logo" viewBox="0 0 240 32" role="img" 
-        aria-label="Логотип сервиса You-Tvideo">
-        <use xlink:href="/img/sprite.svg#logo-white"></use>
-    </svg>
-    <h1 class="hero__tegline">Смотри. Загружай. Создавай</h1>
-    </div>
-</section>
-<section class="search">
-    <div class="search__container container">
-<form action="" class="search__form">
-<label class="search__label">
-<input type="search" class="search__input">
-<button type="submit" class="search__btn">поиск</button>
-
-</label>
-</form>
-
-
-
-    </div>
+<main class="main">
+    <section class="search">
+        <div class="search__container container">
+            <form action="" class="search__form">
+                <label class="search__label">
+                    <input type="search" class="search__input">
+                    <button type="submit" class="search__btn">поиск</button>
+                </label>
+            </form>
+        </div>
     </section>
 
     <section class="video-list">
         <div class="video-list__container container">
             <h2 class="video-list__title">В тренде</h2>
             <ul class="video-list__items">
-                <li class=video-list__item></li>
-                    <article class="video-card"></article>
+                <li class=video-list__item>
+                    <article class="video-card">
                         <a href="" class="video-card__link" href="">
                             <img class="video-card__thumbnail" src="" alt="">
-            </ul>
                             <h3 class="video-card__title"></div>
                             <p class="video-card__channel"></p>
                             <p class="video-card__duration"></p>
                         </a>
-                        <button class="video-card__favourite" type="button"></button>
+                    </article>
+                </li>
+            </ul>
+            <button class="video-card__favourite" type="button"></button>
         </div>
     </section>
-</div>
+</main>
 
 <footer class="footer">
     <div class="footer__container container">
+        <img src="img/logo-white.svg" alt="Логотип сервиса You-Tvideo" aria-label="Логотип сервиса You-Tvideo" role="img" class="footer__logo">
+        <div class="footer__content">
             <ul class="footer__developers-list">
                 <li class="footer__developers-item">Designer:
-                    <a href="" target="_blank" rel="noopener">Anastasia Ilina</a>
+                    <a class="footer__developers-link" href="" target="_blank" rel="noopener">Anastasia Ilina</a>
                 </li>
                 <li class="footer__developers-item">Developer:
-                    <a class="footer__developers-link" href="" target="_blank" rel="noopener">Anastasia Ilina</a>
+                    <a class="footer__developers-link" href="" target="_blank" rel="noopener">Timofey Shumakov</a>
                 </li>
             </ul>
             <div class="footer__copyright">© You-Tvideo, 2023 </div>
-</div>
+        </div>
+    </div>
 </footer>
-
+</wraper>
 </body>
 </html>
