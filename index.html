@@ -27,7 +27,10 @@
             <form action="" class="search__form">
                 <label class="search__label">
                     <input type="search" class="search__input">
-                    <button type="submit" class="search__btn">поиск</button>
+                    <button type="submit" class="search__btn">
+                        <span>поиск</span>
+                        <img src="img/search.svg" alt="search">
+                    </button>
                 </label>
             </form>
         </div>
@@ -36,19 +39,10 @@
     <section class="video-list">
         <div class="video-list__container container">
             <h2 class="video-list__title">В тренде</h2>
-            <ul class="video-list__items">
-                <li class=video-list__item>
-                    <article class="video-card">
-                        <a href="" class="video-card__link" href="">
-                            <img class="video-card__thumbnail" src="" alt="">
-                            <h3 class="video-card__title"></div>
-                            <p class="video-card__channel"></p>
-                            <p class="video-card__duration"></p>
-                        </a>
-                    </article>
-                </li>
+            <ul class="video-list__items" id="list">
+
             </ul>
-            <button class="video-card__favourite" type="button"></button>
+            
         </div>
     </section>
 </main>
@@ -70,5 +64,6 @@
     </div>
 </footer>
 </wraper>
+<script src="js/script.js"></script>
 </body>
 </html>
